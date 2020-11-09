@@ -9123,3 +9123,194 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 1604656031662	Marionette	INFO	Listening on port 51835
 1604656031904	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604885955172	geckodriver	INFO	Listening on 127.0.0.1:51918
+1604885958206	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileTmDmLt"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604885962256	Marionette	INFO	Listening on port 51928
+1604885962355	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+1604887878549	geckodriver	INFO	Listening on 127.0.0.1:53826
+1604887881373	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofilewwdN25"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604887883620	Marionette	INFO	Listening on port 53836
+1604887884015	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+1604888919874	geckodriver	INFO	Listening on 127.0.0.1:54828
+1604888922932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofilecyidva"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604888924916	Marionette	INFO	Listening on port 54837
+1604888924973	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Inc/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 1: unreachable code after return statement
+JavaScript warning: http://merchant.ips.com.cn/Login.aspx?logType=1, line 324: unreachable code after return statement
+1604888954025	geckodriver	INFO	Listening on 127.0.0.1:54996
+1604888957083	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofilerwG9U5"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604888959244	Marionette	INFO	Listening on port 55006
+1604888959737	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604889904071	geckodriver	INFO	Listening on 127.0.0.1:55839
+1604889907112	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileE7X2qR"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604889909252	Marionette	INFO	Listening on port 55849
+1604889909757	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+1604889925943	Marionette	INFO	Stopped listening on port 55849
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604889928304	geckodriver	INFO	Listening on 127.0.0.1:56007
+1604889931349	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileBGxgEh"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604889933538	Marionette	INFO	Listening on port 56017
+1604889933999	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+1604890007961	geckodriver	INFO	Listening on 127.0.0.1:56192
+1604890010999	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileM1ftwB"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604890013281	Marionette	INFO	Listening on port 56204
+1604890013629	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.

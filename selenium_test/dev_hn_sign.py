@@ -1,6 +1,4 @@
 from time import sleep
-import tesserocr
-from PIL import Image
 from selenium.common.exceptions import NoSuchElementException
 from selenium_test import global_var
 from selenium.webdriver.support import expected_conditions as EC
@@ -21,7 +19,6 @@ class IpsSign:
         # 异常的用户密码字典
         self.unusual_account_dict = {}
 
-        self.security_login_id=global_var.ips_security_login_id
 
         # 错误判断标签
         self.warn_xpath_string = global_var.hn_warn_string
@@ -35,9 +32,11 @@ class IpsSign:
         self.user_name_id = global_var.hn_user_name_id
         self.password_id = global_var.hn_password_id
 
-        # 从字典中获取数据
-        self.merchant_code_dic_generator = self.get_merchant_code_dic_generator()
+        #字典路径
+        self.user_name_dic_dir=global_var.hn_user_name_dic_dir
+        self.password_dic_dir = global_var.hn_password_dic_dir
 
+        # 从字典中获取数据
         self.user_name_dic_generator = self.get_user_name_dic_generator()
 
         self.user_name_pwd_generator = self.get_user_pwd_dic_generator()
@@ -45,17 +44,8 @@ class IpsSign:
         self.data_flag = True
 
     # 从字典中读取数据生成器
-    def get_merchant_code_dic_generator(self):
-        with open('dictionary/phone_number', 'r') as f:
-            while True:
-                lines = f.readlines(1000)
-                if not lines:
-                    break
-                for line in lines:
-                    yield line.replace("\n", "")
-
     def get_user_name_dic_generator(self):
-        with open('dictionary/phone_number', 'r') as f:
+        with open(self.user_name_dic_dir, 'r') as f:
             while True:
                 lines = f.readlines(1000)
                 if not lines:
@@ -64,7 +54,7 @@ class IpsSign:
                     yield line.replace("\n", "")
 
     def get_user_pwd_dic_generator(self):
-        with open('dictionary/user_pwd_dic', 'r') as f:
+        with open(self.password_dic_dir, 'r') as f:
             while True:
                 lines = f.readlines(1000)
                 if not lines:
@@ -74,13 +64,6 @@ class IpsSign:
 
     # 从迭代器中读取一行数据
     def get_dict_data(self):
-        try:
-            self.single_row_dict['merchant_code_dic'] = next(self.merchant_code_dic_generator)
-
-        except StopIteration:
-            print("no merchant_code data")
-            self.data_flag = False
-
         try:
             self.single_row_dict['user_name_dic'] = next(self.user_name_dic_generator)
 
@@ -104,12 +87,11 @@ class IpsSign:
         driver = self.driver
 
         driver.find_element_by_id(self.user_name_id).clear()
-        print("当前账号" + self.single_row_dict['merchant_code_dic'])
-        driver.find_element_by_id(self.user_name_id).send_keys(self.single_row_dict['merchant_code_dic'])
+        print("当前账号" + self.single_row_dict['user_name_dic'])
+        driver.find_element_by_id(self.user_name_id).send_keys(self.single_row_dict['user_name_dic'])
 
         driver.find_element_by_id(self.password_id).clear()
         print("当前密码" + self.single_row_dict['user_pwd_dic'])
-        #driver.find_element_by_id(self.password_id).send_keys(self.single_row_dict['user_pwd_dic'])
         driver.find_element_by_id(self.password_id).send_keys("123456")
 
     # 点击登录
@@ -182,6 +164,7 @@ class IpsSign:
                 correct_account_count += 1
                 self.back_and_refresh()
 
+            #一开始的错误信息标签是空的或者账户错误信息显示
             elif self.get_element_value(self.warn_xpath_string) == global_var.hn_error_message[
                 'ENUP'] or self.get_element_value(
                     self.warn_xpath_string) == "":

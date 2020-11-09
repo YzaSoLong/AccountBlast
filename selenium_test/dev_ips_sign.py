@@ -1,13 +1,7 @@
-#import pytesseract
-import tesserocr
 from PIL import Image
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from tesserocr import PyTessBaseAPI
-# tesseract.exe所在的文件路径
-from selenium.webdriver.support.wait import WebDriverWait
-
-#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 from selenium_test import global_var
 
 
@@ -20,35 +14,53 @@ class IpsSign:
         self.correct_account_dict = {}
         # 存储当前异常行的账户密码并加入异常信息
         self.result_message_dict = {}
-        # 异常的用户密码字典
+        # 异常的用户密码data
         self.unusual_account_dict = {}
-        # 错误判断标签
-        self.warn_xpath_string = "//span[@id='lbWarning']"
-        # 获取driver
+        # get driver
         self.driver = webdriver.Firefox(
             executable_path=r'F:\software\python\python3.7\Tools\geckodriver\geckodriver.exe')
+        # chrmoedriver driver
         # self.driver = webdriver.Chrome(executable_path=r'F:\software\python\python3.7\Tools\geckodriver\chromedriver.exe')
-        #错误信息标签
+        # 错误信息标签
         self.warn_xpath_string = global_var.ips_warn_xpath_string
-        #url
-        self.login_url=global_var.ips_login_url
-        #
-        self.login_button_id = global_var.ips_login_button_id
+        # tessdata dir
+        self.tessdata_dir = global_var.ips_tessdata_dir
+
+        # url
+        self.login_url = global_var.ips_login_url
+
+        # change to security login
+        self.security_login_class_name = global_var.ips_security_login_class_name
+
+        # change to ordinary amdin
+        self.ordinary_admin_id = global_var.ips_ordinary_admin_id
+
+        # user data
+        self.merchant_code_id = global_var.ips_merchant_id
         self.user_name_id = global_var.ips_user_name_id
         self.password_id = global_var.ips_password_id
+        # captcha data
+        self.validate_Code_id = global_var.ips_validate_Code_id
+
+        # click buttion
+        self.login_button_id = global_var.ips_login_button_id
+
+        # 字典路径
+        self.merchant_dic_dir = global_var.ips_merchant_dic_dir
+        self.user_name_dic_dir = global_var.ips_user_name_dic_dir
+        self.password_dic_dir = global_var.ips_password_dic_dir
 
         # 从字典中获取数据
         self.merchant_code_dic_generator = self.get_merchant_code_dic_generator()
-
         self.user_name_dic_generator = self.get_user_name_dic_generator()
-
         self.user_name_pwd_generator = self.get_user_pwd_dic_generator()
 
+        # 字典是否穷尽的flag
         self.data_flag = True
 
     # 从字典中读取数据生成器
     def get_merchant_code_dic_generator(self):
-        with open('dictionary/merchant_code_dic', 'r') as f:
+        with open(self.merchant_dic_dir, 'r') as f:
             while True:
                 lines = f.readlines(1000)
                 if not lines:
@@ -57,7 +69,7 @@ class IpsSign:
                     yield line.replace("\n", "")
 
     def get_user_name_dic_generator(self):
-        with open('dictionary/user_name_dic', 'r') as f:
+        with open(self.user_name_dic_dir, 'r') as f:
             while True:
                 lines = f.readlines(1000)
                 if not lines:
@@ -66,7 +78,7 @@ class IpsSign:
                     yield line.replace("\n", "")
 
     def get_user_pwd_dic_generator(self):
-        with open('dictionary/user_pwd_dic', 'r') as f:
+        with open(self.password_dic_dir, 'r') as f:
             while True:
                 lines = f.readlines(1000)
                 if not lines:
@@ -102,10 +114,10 @@ class IpsSign:
         self.driver.get(self.login_url)
 
     # 转换到普通管理员登录
-    def convert_to_ordinaryadmin(self):
+    def convert_to_ordinary_admin(self):
         driver = self.driver
-        driver.find_element_by_class_name("big1").click()
-        driver.find_element_by_id("rdNormal").click()
+        driver.find_element_by_class_name(self.security_login_class_name).click()
+        driver.find_element_by_id(self.ordinary_admin_id).click()
 
     # 获取验证码图片
     def get_CAPTCHA_picture(self):
@@ -139,7 +151,7 @@ class IpsSign:
         # 通过表格转换成二进制图片，1的作用是白色，否则就是黑色
         image = image.point(table, "1")
         # image.show()
-        with PyTessBaseAPI(path='F:/software/tesserOcr/tessdata/.',lang='eng') as tess_api:
+        with PyTessBaseAPI(path=self.tessdata_dir, lang='eng') as tess_api:
             tess_api.SetImage(image)
             print(tess_api.GetUTF8Text())
             self.result = tess_api.GetUTF8Text()
@@ -149,28 +161,28 @@ class IpsSign:
     def enter_acount_and_password(self):
         driver = self.driver
 
-        driver.find_element_by_id("txtMerchantCode").clear()
+        driver.find_element_by_id(self.merchant_code_id).clear()
         print("当前账号" + self.single_row_dict['merchant_code_dic'])
-        driver.find_element_by_id("txtMerchantCode").send_keys(self.single_row_dict['merchant_code_dic'])
+        driver.find_element_by_id(self.merchant_code_id).send_keys(self.single_row_dict['merchant_code_dic'])
 
-        driver.find_element_by_id("txtUserName").clear()
+        driver.find_element_by_id(self.user_name_id).clear()
         print("当前商户号" + self.single_row_dict['user_name_dic'])
-        driver.find_element_by_id("txtUserName").send_keys(self.single_row_dict['user_name_dic'])
+        driver.find_element_by_id(self.user_name_id).send_keys(self.single_row_dict['user_name_dic'])
 
-        driver.find_element_by_id("txtUserPwd").clear()
+        driver.find_element_by_id(self.password_id).clear()
         print("当前密码" + self.single_row_dict['user_pwd_dic'])
-        driver.find_element_by_id("txtUserPwd").send_keys(self.single_row_dict['user_pwd_dic'])
+        driver.find_element_by_id(self.password_id).send_keys(self.single_row_dict['user_pwd_dic'])
 
     # 输入验证码
     def enter_CAPTCHA(self):
         driver = self.driver
-        driver.find_element_by_id("txtValidateCode").clear()
-        driver.find_element_by_id("txtValidateCode").send_keys(self.result)
+        driver.find_element_by_id(self.validate_Code_id).clear()
+        driver.find_element_by_id(self.validate_Code_id).send_keys(self.result)
 
     # 点击登录
     def click_login(self):
         driver = self.driver
-        driver.find_element_by_id("btnLogin").click()
+        driver.find_element_by_id(self.login_button_id).click()
 
     # 通过xpath_string判断标签是否存在
     def is_element_present(self, xpath_string):
@@ -191,9 +203,9 @@ class IpsSign:
         return element_value
 
     # 一个登录的过程
-    def driver_ordinaryadmin_login(self):
+    def driver_ordinary_admin_login(self):
         self.get_driver()
-        self.convert_to_ordinaryadmin()
+        self.convert_to_ordinary_admin()
         self.no_convert_to_login()
 
     # 在原页面重新输入数据登陆
@@ -207,8 +219,8 @@ class IpsSign:
     # 使用原来的密码 只更改验证码登录
     def use_same_account_to_login(self):
         driver = self.driver
-        driver.find_element_by_id("txtUserPwd").clear()
-        driver.find_element_by_id("txtUserPwd").send_keys(self.single_row_dict['user_pwd_dic'])
+        driver.find_element_by_id(self.password_id).clear()
+        driver.find_element_by_id(self.password_id).send_keys(self.single_row_dict['user_pwd_dic'])
         self.get_CAPTCHA_picture()
         self.get_CAPTCHA_content()
         self.enter_CAPTCHA()
@@ -218,7 +230,7 @@ class IpsSign:
     def refresh_and_click_rdNormal(self):
         driver = self.driver
         driver.refresh()
-        driver.find_element_by_id("rdNormal").click()
+        driver.find_element_by_id(self.ordinary_admin_id).click()
 
     # 循环登录
     def loop_to_sign(self):
@@ -228,12 +240,12 @@ class IpsSign:
 
         driver = self.driver
 
-        self.convert_to_ordinaryadmin()
+        self.convert_to_ordinary_admin()
 
         correct_account_count = 0
         unusual_account_count = 0
         while self.data_flag:
-        #for i in range(0, 100):
+            # for i in range(0, 100):
             if not self.is_element_present(self.warn_xpath_string):
                 self.result_message_dict = {}
                 self.result_message_dict.update(self.single_row_dict)
