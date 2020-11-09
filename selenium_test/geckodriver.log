@@ -8815,3 +8815,311 @@ Can't find symbol 'eglSwapBuffersWithDamageEXT'.
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1604653855958	geckodriver	INFO	Listening on 127.0.0.1:64153
+1604653858994	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofilejaKh0D"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604653861110	Marionette	INFO	Listening on port 64162
+1604653861141	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/foundation/js/routes/BaseApplicationRouter.js, line 1: TypeError: t.PARAM_VALUES is null
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_common_layout/LayoutConstant
+http://requirejs.org/docs/errors.html#scripterror
+1604653904621	geckodriver	INFO	Listening on 127.0.0.1:64300
+1604653907678	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofile6DjpJs"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604653909820	Marionette	INFO	Listening on port 64309
+1604653910345	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/foundation/js/routes/BaseApplicationRouter.js, line 1: TypeError: t.PARAM_VALUES is null
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/foundation/js/FoundationLogin.js, line 1: TypeError: e.BarrettMu is not a constructor
+1604654304579	geckodriver	INFO	Listening on 127.0.0.1:64955
+1604654307619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileusxA6a"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654309695	Marionette	INFO	Listening on port 64965
+1604654309746	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1604654547576	Marionette	INFO	Stopped listening on port 64965
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+esource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654369248	Marionette	INFO	Listening on port 65099
+1604654369280	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604654547512	Marionette	INFO	Stopped listening on port 65099
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilezYy2F3"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654474735	Marionette	INFO	Listening on port 65266
+1604654474787	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604654547453	Marionette	INFO	Stopped listening on port 65266
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileb5pxKn"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654531889	Marionette	INFO	Listening on port 65390
+1604654532292	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/foundation/js/routes/BaseApplicationRouter.js, line 1: TypeError: t.PARAM_VALUES is null
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/foundation/js/routes/BaseApplicationRouter.js, line 1: TypeError: t.PARAM_VALUES is null
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+1604654656997	geckodriver	INFO	Listening on 127.0.0.1:49198
+1604654660048	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileH0lATf"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654662200	Marionette	INFO	Listening on port 49207
+1604654662691	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1604654770430	Marionette	INFO	Stopped listening on port 49207
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+esource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654737220	Marionette	INFO	Listening on port 49381
+1604654737701	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604654770347	Marionette	INFO	Stopped listening on port 49381
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604654802037	geckodriver	INFO	Listening on 127.0.0.1:49525
+1604654805095	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileek2nSI"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654807214	Marionette	INFO	Listening on port 49535
+1604654807241	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604654939301	Marionette	INFO	Stopped listening on port 49535
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofile9IQeMY"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654839227	Marionette	INFO	Listening on port 49640
+1604654839370	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 10928, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1604654939324	Marionette	INFO	Stopped listening on port 49640
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+re.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654869908	Marionette	INFO	Listening on port 49772
+1604654870411	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604654939018	Marionette	INFO	Stopped listening on port 49772
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileUm4SPH"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654927252	Marionette	INFO	Listening on port 49981
+1604654927785	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604654939187	Marionette	INFO	Stopped listening on port 49981
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604654967193	geckodriver	INFO	Listening on 127.0.0.1:50090
+1604654970229	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileNdxWv4"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604654972375	Marionette	INFO	Listening on port 50099
+1604654972920	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+1604655111290	geckodriver	INFO	Listening on 127.0.0.1:50324
+1604655114352	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofiletT6SJs"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655116520	Marionette	INFO	Listening on port 50335
+1604655117005	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604655325696	Marionette	INFO	Stopped listening on port 50335
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofile1tEkIk"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655147199	Marionette	INFO	Listening on port 50446
+1604655147709	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604655261131	Marionette	INFO	Stopped listening on port 50446
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604655271467	geckodriver	INFO	Listening on 127.0.0.1:50669
+1604655274498	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofilerEYVyn"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655276639	Marionette	INFO	Listening on port 50680
+1604655277125	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604655325749	Marionette	INFO	Stopped listening on port 50680
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofilehjrxVk"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655308127	Marionette	INFO	Listening on port 50803
+1604655308417	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/routes/BaseApplicationRouter
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/foundation/js/routes/BaseApplicationRouter.js, line 1: TypeError: t.PARAM_VALUES is null
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+1604655391295	geckodriver	INFO	Listening on 127.0.0.1:50970
+1604655394340	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofile0zjFwR"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655396439	Marionette	INFO	Listening on port 50981
+1604655396479	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/initialize
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/routes/BaseApplicationRouter
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/FoundationLogin
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: core_js/LoginCoreFramework
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/core/js/lib/require/2.1.11/require.js, line 1: Error: Script error for: foundation_js/views/login
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://wxbank.ynhtbank.com/euler-tld/euler/5.4.0.3/foundation/js/FoundationLogin.js, line 1: TypeError: e.BarrettMu is not a constructor
+1604655409870	geckodriver	INFO	Listening on 127.0.0.1:51083
+1604655412931	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileOXnzTz"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655415007	Marionette	INFO	Listening on port 51092
+1604655415072	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604655663275	Marionette	INFO	Stopped listening on port 51092
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l\\Temp\\rust_mozprofileVrQcPc"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655563322	Marionette	INFO	Listening on port 51318
+1604655563348	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604655647383	geckodriver	INFO	Listening on 127.0.0.1:51445
+1604655650441	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileiUqz56"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655652565	Marionette	INFO	Listening on port 51454
+1604655652587	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604655712457	geckodriver	INFO	Listening on 127.0.0.1:51558
+1604655715504	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileoBBa0i"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604655717388	Marionette	INFO	Listening on port 51569
+1604655718140	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604656026215	geckodriver	INFO	Listening on 127.0.0.1:51826
+1604656029271	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\YANGZH~1\\AppData\\Local\\Temp\\rust_mozprofileysKkJD"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604656031662	Marionette	INFO	Listening on port 51835
+1604656031904	Marionette	WARN	TLS certificate errors will be ignored for this session

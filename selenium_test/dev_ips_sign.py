@@ -8,6 +8,8 @@ from tesserocr import PyTessBaseAPI
 from selenium.webdriver.support.wait import WebDriverWait
 
 #pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+from selenium_test import global_var
+
 
 class IpsSign:
 
@@ -26,6 +28,14 @@ class IpsSign:
         self.driver = webdriver.Firefox(
             executable_path=r'F:\software\python\python3.7\Tools\geckodriver\geckodriver.exe')
         # self.driver = webdriver.Chrome(executable_path=r'F:\software\python\python3.7\Tools\geckodriver\chromedriver.exe')
+        #错误信息标签
+        self.warn_xpath_string = global_var.ips_warn_xpath_string
+        #url
+        self.login_url=global_var.ips_login_url
+        #
+        self.login_button_id = global_var.ips_login_button_id
+        self.user_name_id = global_var.ips_user_name_id
+        self.password_id = global_var.ips_password_id
 
         # 从字典中获取数据
         self.merchant_code_dic_generator = self.get_merchant_code_dic_generator()
@@ -89,7 +99,7 @@ class IpsSign:
 
     # 获取driver
     def get_driver(self):
-        self.driver.get("http://merchant.ips.com.cn/Login.aspx?logType=1")
+        self.driver.get(self.login_url)
 
     # 转换到普通管理员登录
     def convert_to_ordinaryadmin(self):
