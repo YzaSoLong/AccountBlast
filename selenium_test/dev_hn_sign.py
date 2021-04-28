@@ -143,7 +143,7 @@ class IpsSign:
 
         #等待浏览器加载
         try:
-            element = WebDriverWait(driver, 5).until(
+            element = WebDriverWait(driver, 20).until(
                 EC.presence_of_element_located((By.ID, global_var.hn_user_name_id))
             )
         except Exception as ex:

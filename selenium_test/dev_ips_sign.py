@@ -90,6 +90,7 @@ class IpsSign:
     def get_dict_data(self):
         try:
             self.single_row_dict['merchant_code_dic'] = next(self.merchant_code_dic_generator)
+            print(self.merchant_code_dic_generator)
 
         except StopIteration:
             print("no merchant_code data")
@@ -141,7 +142,7 @@ class IpsSign:
         # 进行置灰处理
         image = image.convert('L')
         # 二值化阈值
-        threshold = 225
+        threshold = 200
         table = []
         for i in range(256):
             if i < threshold:
@@ -235,17 +236,13 @@ class IpsSign:
     # 循环登录
     def loop_to_sign(self):
 
-        # while data_flag:
         self.get_driver()
-
         driver = self.driver
-
         self.convert_to_ordinary_admin()
-
         correct_account_count = 0
-        unusual_account_count = 0
-        while self.data_flag:
-            # for i in range(0, 100):
+
+        #while self.data_flag:
+        for i in range(0, 30):
             if not self.is_element_present(self.warn_xpath_string):
                 self.result_message_dict = {}
                 self.result_message_dict.update(self.single_row_dict)

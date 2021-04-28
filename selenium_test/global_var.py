@@ -40,3 +40,10 @@ ke_warn_string = "//class[@class='frame-p-error-msg']"
 ke_error_message = {'ENUP': "用户名或密码不正确"}
 ke_username_dic_dir = "dictionary/phone_number_dic"
 ke_password_dic_dir = "dictionary/user_pwd_dic"
+
+ali_password_id="password_rsainput"
+ali_user_name_xpath="//input[@seed='formItem-account']"
+ali_login_button_xpath="//input[@seed='formItem-btn']"
+ali_login_url="https://auth.cloud.alipay.com/authorize?clientId=LTAIphRJ2ntlkoTA&responseType=code&grantType=authorizationCode&redirectUri=https://mappcenter.cloud.alipay.com/index.htm"
+ali_warn_string="form-error"
+ali_error_message = {'ENUP': "账户名格式错误"}

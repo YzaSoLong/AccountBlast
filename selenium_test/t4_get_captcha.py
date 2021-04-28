@@ -11,6 +11,8 @@ class ips_captcha(unittest.TestCase):
     def test_ips_captcha(self):
 
         image_dir = "screen_shot/screenshot_capture_1.png"
+        #image_dir = "screen_shot/capture_T1.png"
+        #image_dir = "screen_shot/T4.png"
 
         # 新建Image对象
         image = Image.open(image_dir)
@@ -19,7 +21,9 @@ class ips_captcha(unittest.TestCase):
         image = image.convert('L')
 
         # 这个是二值化阈值,在threshold值之上的值全部值为白色，之下的值置为黑色
-        threshold = 225
+        threshold = 200
+
+        #threshold = 200
         table = []
 
         for i in range(256):
@@ -28,6 +32,7 @@ class ips_captcha(unittest.TestCase):
             else:
                 table.append(1)
         image = image.point(table, "1")
+        image.show()
         with tesserocr.PyTessBaseAPI(path='F:/software/tesserOcr/tessdata/.',lang='eng') as tess_api:
             tess_api.SetImage(image)
             print(tess_api.GetUTF8Text())

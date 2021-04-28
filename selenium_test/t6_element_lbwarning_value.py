@@ -26,10 +26,10 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search_in_python_org(self):
         driver = self.driver
-        driver.get("")
+        driver.get("https://wxbank.ynhtbank.com/euler-tld/#login")
 
         try:
-            element = WebDriverWait(driver, 5).until(
+            element = WebDriverWait(driver, 20).until(
                 EC.presence_of_element_located((By.CLASS_NAME, "big1"))
             ).click()
         except Exception as ex:
