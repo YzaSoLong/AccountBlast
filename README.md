@@ -1,0 +1,1 @@
+通过selenium打开浏览器，并通过tesserocr识别图形验证码，爆破账户密码
